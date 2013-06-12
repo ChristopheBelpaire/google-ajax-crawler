@@ -4,7 +4,7 @@ module GoogleAjaxCrawler
 
     def initialize(app, &block)
       @driver  = Drivers::Poltergeist.new(self)
-      @timeout = 30
+      @timeout = 90
       @requested_route_key  = '_escaped_fragment_'
       @response_headers     = { 'Content-Type' => 'text/html' }
       @poll_interval        = 0.5
