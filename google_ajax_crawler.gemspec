@@ -2,9 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
+require 'google_ajax_crawler/version'
+
 Gem::Specification.new do |s|
   s.name        = 'google_ajax_crawler'
-  s.version     = '1.1.3'
+  s.version     = GoogleAjaxCrawler::VERSION
   s.summary     = 'Rack Middleware adhering to the Google Ajax Crawling Scheme ensuring your JS rendered page states (i.e. BackboneJS routes) can be crawled and indexed by search engines.'
   s.description = 'Rack Middleware adhering to the Google Ajax Crawling Scheme, using a headless browser to render JS heavy pages and serve a dom snapshot of the rendered state to a requesting search engine.'
   s.authors     = ['Ben Kitzelman']
