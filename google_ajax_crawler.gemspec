@@ -1,4 +1,7 @@
-require './lib/google_ajax_crawler'
+# -*- encoding: utf-8 -*-
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
 Gem::Specification.new do |s|
   s.name        = 'google_ajax_crawler'
   s.version     = GoogleAjaxCrawler.version
@@ -12,4 +15,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'poltergeist', '>= 1.3.0'
   s.add_dependency 'rack'
+
+  s.require_path = 'lib'
 end
