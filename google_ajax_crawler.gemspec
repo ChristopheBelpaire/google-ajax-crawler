@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files`.strip.split("\n")
   s.executables = []
 
+  s.add_dependency "capybara",         "~> 2.1.0"
   s.add_runtime_dependency 'poltergeist', '>= 1.3.0'
   s.add_dependency 'rack'
 end
