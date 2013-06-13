@@ -14,9 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://github.com/benkitzelman/google-ajax-crawler'
   s.files       = `git ls-files`.strip.split("\n")
   s.executables = []
-
   s.add_dependency 'poltergeist', '>= 1.3.0'
   s.add_dependency 'rack'
-
   s.require_path = 'lib'
 end
