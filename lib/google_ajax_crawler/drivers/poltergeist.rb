@@ -12,6 +12,12 @@ module GoogleAjaxCrawler
         configure
       end
 
+      def html
+        content = super
+        page.driver.browser.reset
+        return content
+      end  
+
       def default_page_loaded_test
         (page.evaluate_script('$.active') == 0)
       end

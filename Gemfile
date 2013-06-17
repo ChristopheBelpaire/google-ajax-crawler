@@ -8,4 +8,5 @@ group :development, :test do
 	gem 'rake'
   gem 'rspec'
   gem 'faraday'
+  gem 'debugger'
 end
